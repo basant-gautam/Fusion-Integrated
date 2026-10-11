@@ -66,6 +66,7 @@ export default function SanctionQueuePage() {
           rows={queue ?? []}
           loading={isPending}
           rowKey={(r) => r.id}
+          empty={{ title: "Sanction queue is clear", description: "No applications awaiting your final sanction decision." }}
           minWidth={850}
           columns={[
             {

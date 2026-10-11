@@ -65,6 +65,7 @@ export default function RoutingQueuePage() {
           rows={queue ?? []}
           loading={isPending}
           rowKey={(r) => r.id}
+          empty={{ title: "Routing queue is clear", description: "No applications awaiting forwarding to sanctioning authority." }}
           minWidth={850}
           columns={[
             {

@@ -65,6 +65,7 @@ export default function ResumptionsPage() {
           rows={queue ?? []}
           loading={isPending}
           rowKey={(r) => r.id}
+          empty={{ title: "No pending resumptions", description: "There are no duty resumptions waiting for verification." }}
           minWidth={850}
           columns={[
             {

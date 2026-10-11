@@ -2,7 +2,6 @@ import {
   Badge,
   Card,
   Container,
-  SimpleGrid,
   Stack,
   Text,
   Title,
@@ -35,6 +34,7 @@ export default function PolicyPage() {
             rows={policies ?? []}
             loading={polPending}
             rowKey={(r) => r.id}
+            empty={{ title: "No policies configured", description: "No leave policies found." }}
             minWidth={700}
             columns={[
               {
@@ -75,6 +75,7 @@ export default function PolicyPage() {
             rows={calendars ?? []}
             loading={calPending}
             rowKey={(r) => r.id}
+            empty={{ title: "No calendars configured", description: "No holiday or vacation calendars found." }}
             minWidth={700}
             columns={[
               {

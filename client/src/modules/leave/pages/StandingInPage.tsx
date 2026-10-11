@@ -66,6 +66,7 @@ export default function StandingInPage() {
           rows={nominations ?? []}
           loading={isPending}
           rowKey={(r) => r.id}
+          empty={{ title: "No substitute requests", description: "You have no pending requests to stand in as substitute." }}
           minWidth={800}
           columns={[
             {

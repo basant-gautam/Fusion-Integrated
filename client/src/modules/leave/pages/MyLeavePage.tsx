@@ -94,6 +94,7 @@ export default function MyLeavePage() {
             rows={requests ?? []}
             loading={reqPending || balPending}
             rowKey={(r) => r.id}
+            empty={{ title: "No leave applications", description: "You have not submitted any leave applications yet." }}
             minWidth={800}
             columns={[
               {

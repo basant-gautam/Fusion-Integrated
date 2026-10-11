@@ -66,6 +66,7 @@ export default function ReviewQueuePage() {
           rows={queue ?? []}
           loading={isPending}
           rowKey={(r) => r.id}
+          empty={{ title: "Review queue is clear", description: "No leave applications awaiting your review." }}
           minWidth={850}
           columns={[
             {
